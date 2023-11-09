@@ -1,0 +1,7 @@
+.userdata-main {
+  display: flex;
+  width: 100%;
+}
+.userdata-container {
+  flex: 6;
+}

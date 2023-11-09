@@ -1,0 +1,42 @@
+.card-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30vw;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  margin: 2vw;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+  margin: 5vh 0;
+}
+.photo-img {
+  width: 100%;
+  position: relative;
+}
+.photo-text {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+}

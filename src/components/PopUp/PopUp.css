@@ -1,0 +1,153 @@
+/* display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1vw;
+  border-radius: 10px;
+  height: 15vh;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+} */
+
+.popup-continer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  bottom: 0;
+  background: url("/public/assets/img/logo.png");
+  background-color: gray;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.popup-card-delete {
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  /* border: 5px solid lightgray; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: blue;
+  padding: 1vw;
+  /*  */
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: rgb(160, 160, 160);
+}
+.popup-card-delete button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1vw;
+  height: 5vh;
+  margin: 3vh 0.2vw;
+  text-align: center;
+  width: 7vw;
+  /*  */
+  font-size: 1.5vw;
+  padding: 5px;
+  border-radius: 5px;
+
+  background-color: green;
+}
+
+.popup-card-update {
+  width: 20vw;
+  height: 50vh;
+  background-color: white;
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: blue;
+}
+.popup-card-update input {
+  border-radius: 12px;
+  font-size: 0.8vw;
+  height: 1vh;
+  width: 10vw;
+  padding: 1rem;
+  text-align: center;
+  margin: 1vh auto;
+}
+.popup-card-update textarea {
+  border-radius: 12px;
+  width: 10vw;
+  font-size: 0.8vw;
+  text-align: center;
+  padding: 1rem;
+  margin: 1vh auto;
+}
+.buttons-update {
+  display: flex;
+}
+.buttons-update button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: vh;
+  margin: 3vh 1vw;
+  color: black;
+  text-align: center;
+  width: 7vw;
+}
+.buttons-update button:hover,
+.popup-card-delete button:hover {
+  background-color: blue;
+  color: #eee;
+}
+.popup-hidden {
+  display: none;
+}
+
+@media all and (max-width: 830px) {
+  .popup-card-update input,
+  .popup-card-update textarea {
+    font-size: 2.5vw;
+    width: 50vw;
+  }
+  .buttons-update button,
+  .popup-card-delete button {
+    font-size: 2.5vw;
+    height: 3vh;
+    width: 20vw;
+  }
+  .popup-card-update,
+  .popup-card-delete {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .popup-continer {
+    left: 0;
+    width: 100%;
+  }
+  .popup-card-update {
+    width: 100%;
+    height: 50vh;
+  }
+  .popup-card-delete {
+    width: 100%;
+    height: 50vh;
+  }
+  .popup-card-delete h4 {
+    text-align: center;
+  }
+}

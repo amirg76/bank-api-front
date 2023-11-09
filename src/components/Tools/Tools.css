@@ -1,0 +1,38 @@
+.second-card {
+  width: 80%;
+  display: flex;
+  margin: 2vw 0;
+  justify-content: space-between;
+}
+.second-photo-card {
+  width: 100%;
+}
+.second-photo-img {
+  width: 100%;
+  position: relative;
+}
+.second-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.second-container h1 {
+  margin: 2vh 0;
+}
+.second-container h4 {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .second-card {
+    flex-direction: column;
+  }
+
+  .second-container h4 {
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+}
