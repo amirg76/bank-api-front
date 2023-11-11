@@ -32,8 +32,8 @@ const NewForm = ({ inputs, title, type }) => {
   });
   let url = "";
   type === "users"
-    ? (url = "http://localhost:5000/users/create-user")
-    : (url = "http://localhost:5000/accounts/create-account");
+    ? (url = "https://bank-api-front.onrender.com/users/create-user")
+    : (url = "https://bank-api-front.onrender.com/accounts/create-account");
   console.log(process.env.NODE_ENV);
 
   if (process.env.NODE_ENV === "production") {
