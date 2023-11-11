@@ -6,7 +6,7 @@ import DashBoardNav from "../DashBoardNav/DashBoardNav";
 import AccountChart from "../AccountChart/AccountChart";
 import Movements from "../Movements/Movements";
 import { Link, Redirect } from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
 const SingleUser = (props) => {
   const [data, setData] = useState([]);
   const [AccountIndex, setAccountIndex] = useState(0);
