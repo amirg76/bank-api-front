@@ -1,5 +1,5 @@
 import axios from "axios";
-let url = "http://localhost:5000/";
+let url = "https://bank-api-front.onrender.com";
 console.log(process.env.NODE_ENV);
 
 if (process.env.NODE_ENV === "production") {
